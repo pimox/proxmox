@@ -2,9 +2,6 @@
 
 set -e
 
-export CARGO=/usr/bin/cargo
-export RUSTC=/usr/bin/rustc
-
 CRATE=$1
 BUILDCMD=${BUILDCMD:-"dpkg-buildpackage -b -uc -us"}
 
