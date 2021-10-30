@@ -6,7 +6,7 @@ export CARGO=/usr/bin/cargo
 export RUSTC=/usr/bin/rustc
 
 CRATE=$1
-BUILDCMD=${BUILDCMD:-"dpkg-buildpackage -b -uc -us"}
+BUILDCMD=${BUILDCMD:-"dpkg-buildpackage -b -uc -us -d"}
 
 mkdir -p build
 echo system >build/rust-toolchain
